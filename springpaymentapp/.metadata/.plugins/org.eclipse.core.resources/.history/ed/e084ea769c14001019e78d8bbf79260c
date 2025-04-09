@@ -1,0 +1,16 @@
+package com.example.SpringPaymentApp.services;
+
+import com.example.SpringPaymentApp.entity.BankAccounts;
+
+public class BankService 
+{
+
+	public boolean addBankAccount(BankAccounts bankAccounts) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean 
+	
+	
+}

@@ -1,0 +1,94 @@
+package com.example.SpringPaymentApp.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+@Entity
+public class BankAccounts {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int accountid;
+
+    private int userId;
+    private String accountNumber;
+    private String ifscCode;
+    private String bankName;
+    private String branchLocation;
+    private boolean isActive;
+
+    public BankAccounts() {
+        // Default constructor required by JPA
+    }
+
+//	public int getAccountid() {
+//		return accountid;
+//	}
+//
+//	public void setAccountid(int accountid) {
+//		this.accountid = accountid;
+//	}
+
+	public int getUserid() {
+		return userid;
+	}
+
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+
+	public String getAccountnumber() {
+		return accountnumber;
+	}
+
+	public void setAccountnumber(String accountnumber) {
+		this.accountnumber = accountnumber;
+	}
+
+	public String getIfsccode() {
+		return ifsccode;
+	}
+
+	public void setIfsccode(String ifsccode) {
+		this.ifsccode = ifsccode;
+	}
+
+	public String getBankname() {
+		return bankname;
+	}
+
+	public void setBankname(String bankname) {
+		this.bankname = bankname;
+	}
+
+	public String getBranchlocation() {
+		return branchlocation;
+	}
+
+	public void setBranchlocation(String branchlocation) {
+		this.branchlocation = branchlocation;
+	}
+
+	public boolean isIsactive() {
+		return isactive;
+	}
+
+	public void setIsactive(boolean isactive) {
+		this.isactive = isactive;
+	}
+
+	public BankAccounts(int userid, String accountnumber, String ifsccode, String bankname,
+			String branchlocation, boolean isactive) {
+		super();
+		this.userid = userid;
+		this.accountnumber = accountnumber;
+		this.ifsccode = ifsccode;
+		this.bankname = bankname;
+		this.branchlocation = branchlocation;
+		this.isactive = isactive;
+	}
+
+   
+}

@@ -1,0 +1,70 @@
+7:33:47 Memory Pressure: Critical
+7:33:52 Memory Pressure: Critical
+7:33:57 Memory Pressure: Critical
+7:34:02 Memory Pressure: Critical
+7:34:07 Memory Pressure: Critical
+7:34:12 Memory Pressure: Critical
+7:34:17 Memory Pressure: Moderate
+7:34:27 Memory Pressure: Moderate
+7:34:32 Memory Pressure: Critical
+7:34:37 Memory Pressure: Critical
+7:34:42 Memory Pressure: Critical
+7:34:47 Memory Pressure: Critical
+7:34:52 Memory Pressure: Critical
+7:34:57 Memory Pressure: Critical
+7:35:02 Memory Pressure: Moderate
+7:35:07 Memory Pressure: Critical
+7:35:12 Memory Pressure: Moderate
+7:35:22 Memory Pressure: Critical
+7:35:27 Memory Pressure: Critical
+7:35:32 Memory Pressure: Critical
+7:35:37 Memory Pressure: Critical
+7:35:42 Memory Pressure: Critical
+7:35:47 Memory Pressure: Critical
+7:35:52 Memory Pressure: Moderate
+7:36:02 Memory Pressure: Moderate
+7:36:12 Memory Pressure: Moderate
+7:36:22 Memory Pressure: Critical
+7:36:27 Memory Pressure: Critical
+7:36:32 Memory Pressure: Critical
+7:36:37 Memory Pressure: Critical
+7:36:42 Memory Pressure: Critical
+7:36:47 Memory Pressure: Critical
+7:36:52 Memory Pressure: Critical
+7:36:57 Memory Pressure: Critical
+7:37:02 Memory Pressure: Critical
+7:37:07 Memory Pressure: Critical
+7:37:12 Memory Pressure: Moderate
+7:37:17 Memory Pressure: Critical
+7:37:22 Memory Pressure: Critical
+7:37:27 Memory Pressure: Critical
+7:37:32 Memory Pressure: Moderate
+7:37:34 Browser5 Close Tab5 at 0
+7:37:34 Tab5 WebContentsDestroyed
+7:37:34 Microsoft.Shutdown.OnWindowClosing
+7:37:34 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+7:37:34 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+7:37:34 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+7:37:34 Widget Closed: BrowserFrame
+7:37:35 Microsoft.Browser_Removed
+7:37:37 Memory Pressure: Critical
+7:37:42 Memory Pressure: Moderate
+7:37:52 Memory Pressure: Moderate
+7:37:57 Memory Pressure: Critical
+7:38:02 Memory Pressure: Critical
+7:38:07 Memory Pressure: Moderate
+7:38:17 Memory Pressure: Moderate
+7:38:19 Microsoft.Shutdown.OnWindowClosing
+7:38:19 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+7:38:19 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+7:38:19 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+7:38:19 Tab1 RenderProcessGone
+7:38:19 Browser1 Close Tab1 at 0
+7:38:19 Tab1 WebContentsDestroyed
+7:38:19 Microsoft.Shutdown.OnWindowClosing
+7:38:19 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+7:38:19 Widget Closed: BrowserFrame
+7:38:19 Microsoft.Shutdown.OnWindowClosing
+7:38:19 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+7:38:19 Microsoft.Last_Browser_Removed
+7:38:19 Microsoft.Shutdown.ShutdownIfNoBrowsers

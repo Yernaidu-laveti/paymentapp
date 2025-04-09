@@ -1,0 +1,21 @@
+package com.example.SpringPaymentApp;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
+
+public interface UserRepository extends JpaRepository<User,Integer>
+{
+	boolean existsByUserNameAndPassword(String userName,String password);
+
+	boolean existsByUserId(int userId);
+	
+	User findByUserId(int userId);
+	@Modifying
+	@Transactional
+	@Query("UPDATE  user set user.userName=:userName,user.firstName=:firstName,user.lastName=:lastName,user.email=:email,user.phoneNum=:phoneNum,user.dob=:dob,user.address=:address where user.userId=:userId")
+	int updateByUserId(int userId,String userName,String firstName, String  lastName,String email,int phoneNum,String dob,String address);
+
+}

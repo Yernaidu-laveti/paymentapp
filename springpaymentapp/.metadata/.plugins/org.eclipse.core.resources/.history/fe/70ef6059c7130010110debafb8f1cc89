@@ -1,0 +1,102 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>User Profile</title>
+	  <style>
+	    body {
+	      font-family: 'Segoe UI', sans-serif;
+	      background-color: #f0f2f5;
+	      display: flex;
+	      justify-content: center;
+	      padding: 40px;
+	    }
+
+	    .profile-card {
+	      background: #fff;
+	      padding: 25px 35px;
+	      border-radius: 15px;
+	      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	      width: 400px;
+	    }
+
+	    .profile-card h2 {
+	      margin-bottom: 20px;
+	      color: #333;
+	      text-align: center;
+	    }
+
+	    .profile-info {
+	      margin-bottom: 20px;
+	    }
+
+	    .profile-info p {
+	      margin: 10px 0;
+	      font-size: 16px;
+	      color: #555;
+	    }
+
+	    .profile-info span {
+	      font-weight: bold;
+	      color: #222;
+	    }
+
+	    .profile-actions {
+	      display: flex;
+	      justify-content: space-between;
+	    }
+
+	    .profile-actions button {
+	      padding: 10px 20px;
+	      border: none;
+	      border-radius: 8px;
+	      font-weight: bold;
+	      cursor: pointer;
+	      transition: 0.3s;
+	    }
+
+	    .update-btn {
+	      background-color: #007bff;
+	      color: white;
+	    }
+
+	    .update-btn:hover {
+	      background-color: #0056b3;
+	    }
+
+	    .delete-btn {
+	      background-color: #dc3545;
+	      color: white;
+	    }
+
+	    .delete-btn:hover {
+	      background-color: #a71d2a;
+	    }
+	  </style>
+	</head>
+	<body>
+
+	  <div class="profile-card">
+	    <h2>User Profile</h2>
+	    <div class="profile-info">
+	      <p><span>Username:</span> ramu123</p>
+	      <p><span>First Name:</span> Ramu</p>
+	      <p><span>Last Name:</span> Pantulu</p>
+	      <p><span>Email:</span> ramu@example.com</p>
+	      <p><span>Phone:</span> +91 9876543210</p>
+	      <p><span>Date of Birth:</span> 01-Jan-2000</p>
+	      <p><span>Address:</span> Vizag, Andhra Pradesh</p>
+	    </div>
+
+	    <div class="profile-actions">
+	      <button class="update-btn" onclick="updateProfile()">Update</button>
+	      <button class="delete-btn" onclick="deleteProfile()">Delete</button>
+	    </div>
+	  </div>
+
+	  
+
+	</body>
+	</html>

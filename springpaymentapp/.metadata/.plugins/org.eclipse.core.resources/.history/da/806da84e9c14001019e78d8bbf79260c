@@ -1,0 +1,5 @@
+package com.example.SpringPaymentApp.repository;
+
+public interface BankRepository {
+
+}

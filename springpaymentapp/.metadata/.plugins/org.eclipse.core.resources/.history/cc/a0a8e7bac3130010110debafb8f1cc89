@@ -1,0 +1,49 @@
+package com.example.SpringPaymentApp.Controllers;
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.SpringPaymentApp.User;
+import com.example.SpringPaymentApp.services.UserService;
+
+import ch.qos.logback.core.model.Model;
+
+@Controller
+public class HomeController {
+	
+	@Autowired
+	UserService serv;
+
+    @GetMapping("/index")
+    public String homePage() {
+        return "index";  // Renders home.jsp
+    }
+
+    @GetMapping("/profile")
+    public String profilePage(Model model) {
+    	int id=1211;
+    	User user=serv.getProfile(id);
+    	
+        return "profile";  // Renders profile.jsp
+    }
+
+    @GetMapping("/transactions")
+    public String transactionsPage() {
+        return "transactions";  // Renders transactions.jsp
+    }
+
+    @GetMapping("/bankStatement")
+    public String statementPage() {
+        return "bankStatement";  // Renders statement.jsp
+    }
+
+    @GetMapping("/logout")
+    public String logoutPage() {
+        return "logout";  // Renders logout.jsp
+    }
+    
+   
+}

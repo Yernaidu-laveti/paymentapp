@@ -1,0 +1,8 @@
+package com.example.SpringPaymentApp.repository;
+
+import org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension;
+
+public interface BankRepository extends JpaRepositoryExtension<BankAccounts,Integer>
+{
+
+}

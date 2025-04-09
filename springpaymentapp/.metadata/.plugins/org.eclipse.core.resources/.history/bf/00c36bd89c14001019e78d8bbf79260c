@@ -1,0 +1,21 @@
+package com.example.SpringPaymentApp.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.SpringPaymentApp.entity.BankAccounts;
+import com.example.SpringPaymentApp.repository.BankRepository;
+
+public class BankService 
+{
+	@Autowired
+	BankRepository bankrepository;
+	
+	public boolean addBankAccount(BankAccounts bankAccounts) {
+		
+		return bankrepository.save(bankAccounts);
+	}
+
+	
+	
+	
+}

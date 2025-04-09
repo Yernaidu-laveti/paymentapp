@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.SpringPaymentApp.services.UserService;
 
-
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,11 +21,14 @@ public class UserLoginController {
 	UserService service;
 
 	@PostMapping("/login")
-    public String home(@RequestParam String userName,@RequestParam String password,Model model){
+    public String home(@RequestParam String userName,@RequestParam String password,Model model,HttpSession session){
 		
 		boolean result=service.login(userName, password);
+		
 		if(result==true)
 		{
+			int id=service.getid(userName,password);
+			session.setAttribute("profileid",id);
 			return "index";
 		}
 		else
